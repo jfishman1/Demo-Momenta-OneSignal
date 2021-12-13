@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>617799002572-ks7v86v6gkv73os6qq3j43u8bbbmg2d4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.617799002572-ks7v86v6gkv73os6qq3j43u8bbbmg2d4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBQ16Z6Eku4T-bQLHACAajgNCryHOuPwjY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>617799002572</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.onesignal.momenta</string>
+	<key>PROJECT_ID</key>
+	<string>momentapro</string>
+	<key>STORAGE_BUCKET</key>
+	<string>momentapro.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:617799002572:ios:dd9bab1376abdcafd95569</string>
+	<key>DATABASE_URL</key>
+	<string>https://momentapro.firebaseio.com</string>
+</dict>
+</plist>

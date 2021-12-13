@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		478B70C7E9D838DC209889CE /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599E51F4AAABE2F83AA81407 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		C51215A5270E7685006AE78F /* Amplitude in Frameworks */ = {isa = PBXBuildFile; productRef = C51215A4270E7685006AE78F /* Amplitude */; };
+		C52FEDBC2702CD89001DE983 /* Segment in Frameworks */ = {isa = PBXBuildFile; productRef = C52FEDBB2702CD89001DE983 /* Segment */; };
+		C566F13F26FD872200AE8DC1 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = C566F13E26FD872200AE8DC1 /* Mixpanel */; };
+		C590A28326FC27E70097CB98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C590A28226FC27E70097CB98 /* AppDelegate.swift */; };
+		C590A28526FC27E70097CB98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C590A28426FC27E70097CB98 /* SceneDelegate.swift */; };
+		C590A28726FC27E70097CB98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C590A28626FC27E70097CB98 /* ViewController.swift */; };
+		C590A28A26FC27E70097CB98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C590A28826FC27E70097CB98 /* Main.storyboard */; };
+		C590A28C26FC27E90097CB98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C590A28B26FC27E90097CB98 /* Assets.xcassets */; };
+		C590A28F26FC27E90097CB98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C590A28D26FC27E90097CB98 /* LaunchScreen.storyboard */; };
+		C590A29726FC28340097CB98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C590A29626FC28340097CB98 /* GoogleService-Info.plist */; };
+		C590A29F26FC28B50097CB98 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C590A29E26FC28B50097CB98 /* NotificationService.swift */; };
+		C590A2A326FC28B50097CB98 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C590A29C26FC28B50097CB98 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C590A2AB26FC35B20097CB98 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C590A2AA26FC35B20097CB98 /* Cloud.swift */; };
+		F8CC0EF803DA4F101F6D6F19 /* Pods_Demo_Momenta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE25AA2386F5087D86D6174 /* Pods_Demo_Momenta.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C590A2A126FC28B50097CB98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C590A27726FC27E70097CB98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C590A29B26FC28B50097CB98;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C590A2A726FC28B50097CB98 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C590A2A326FC28B50097CB98 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A29F4FBE105709B30270E4A /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		599E51F4AAABE2F83AA81407 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5E4C9854ADCB14506A64AE /* Pods-Demo Momenta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo Momenta.release.xcconfig"; path = "Target Support Files/Pods-Demo Momenta/Pods-Demo Momenta.release.xcconfig"; sourceTree = "<group>"; };
+		84A155830FFB3274AD2F2CF1 /* Pods-Demo Momenta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo Momenta.debug.xcconfig"; path = "Target Support Files/Pods-Demo Momenta/Pods-Demo Momenta.debug.xcconfig"; sourceTree = "<group>"; };
+		BCE25AA2386F5087D86D6174 /* Pods_Demo_Momenta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_Momenta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C590A27F26FC27E70097CB98 /* Demo Momenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Momenta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C590A28226FC27E70097CB98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C590A28426FC27E70097CB98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C590A28626FC27E70097CB98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C590A28926FC27E70097CB98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C590A28B26FC27E90097CB98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C590A28E26FC27E90097CB98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C590A29026FC27E90097CB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C590A29626FC28340097CB98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C590A29C26FC28B50097CB98 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C590A29E26FC28B50097CB98 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		C590A2A026FC28B50097CB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C590A2A826FC2BA20097CB98 /* Demo Momenta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Demo Momenta.entitlements"; sourceTree = "<group>"; };
+		C590A2A926FC2BC30097CB98 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		C590A2AA26FC35B20097CB98 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		D8EE024015FD52798854EF5D /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C590A27C26FC27E70097CB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52FEDBC2702CD89001DE983 /* Segment in Frameworks */,
+				C566F13F26FD872200AE8DC1 /* Mixpanel in Frameworks */,
+				C51215A5270E7685006AE78F /* Amplitude in Frameworks */,
+				F8CC0EF803DA4F101F6D6F19 /* Pods_Demo_Momenta.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C590A29926FC28B50097CB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				478B70C7E9D838DC209889CE /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F5A8F9FD0E6F4369BB892FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84A155830FFB3274AD2F2CF1 /* Pods-Demo Momenta.debug.xcconfig */,
+				6E5E4C9854ADCB14506A64AE /* Pods-Demo Momenta.release.xcconfig */,
+				1A29F4FBE105709B30270E4A /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				D8EE024015FD52798854EF5D /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD67F56451424343BEEA293C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE25AA2386F5087D86D6174 /* Pods_Demo_Momenta.framework */,
+				599E51F4AAABE2F83AA81407 /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C590A27626FC27E70097CB98 = {
+			isa = PBXGroup;
+			children = (
+				C590A28126FC27E70097CB98 /* Demo Momenta */,
+				C590A29D26FC28B50097CB98 /* OneSignalNotificationServiceExtension */,
+				C590A28026FC27E70097CB98 /* Products */,
+				3F5A8F9FD0E6F4369BB892FE /* Pods */,
+				AD67F56451424343BEEA293C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C590A28026FC27E70097CB98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C590A27F26FC27E70097CB98 /* Demo Momenta.app */,
+				C590A29C26FC28B50097CB98 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C590A28126FC27E70097CB98 /* Demo Momenta */ = {
+			isa = PBXGroup;
+			children = (
+				C590A2A826FC2BA20097CB98 /* Demo Momenta.entitlements */,
+				C590A28226FC27E70097CB98 /* AppDelegate.swift */,
+				C590A28426FC27E70097CB98 /* SceneDelegate.swift */,
+				C590A28626FC27E70097CB98 /* ViewController.swift */,
+				C590A28826FC27E70097CB98 /* Main.storyboard */,
+				C590A28B26FC27E90097CB98 /* Assets.xcassets */,
+				C590A28D26FC27E90097CB98 /* LaunchScreen.storyboard */,
+				C590A29026FC27E90097CB98 /* Info.plist */,
+				C590A29626FC28340097CB98 /* GoogleService-Info.plist */,
+				C590A2AA26FC35B20097CB98 /* Cloud.swift */,
+			);
+			path = "Demo Momenta";
+			sourceTree = "<group>";
+		};
+		C590A29D26FC28B50097CB98 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C590A2A926FC2BC30097CB98 /* OneSignalNotificationServiceExtension.entitlements */,
+				C590A29E26FC28B50097CB98 /* NotificationService.swift */,
+				C590A2A026FC28B50097CB98 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C590A27E26FC27E70097CB98 /* Demo Momenta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C590A29326FC27E90097CB98 /* Build configuration list for PBXNativeTarget "Demo Momenta" */;
+			buildPhases = (
+				0D64A17F3F97B68ADEEDCCE6 /* [CP] Check Pods Manifest.lock */,
+				C590A27B26FC27E70097CB98 /* Sources */,
+				C590A27C26FC27E70097CB98 /* Frameworks */,
+				C590A27D26FC27E70097CB98 /* Resources */,
+				C590A2A726FC28B50097CB98 /* Embed App Extensions */,
+				D468346417E7C7E3E0916E91 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C590A2A226FC28B50097CB98 /* PBXTargetDependency */,
+			);
+			name = "Demo Momenta";
+			packageProductDependencies = (
+				C566F13E26FD872200AE8DC1 /* Mixpanel */,
+				C52FEDBB2702CD89001DE983 /* Segment */,
+				C51215A4270E7685006AE78F /* Amplitude */,
+			);
+			productName = "Demo Momenta";
+			productReference = C590A27F26FC27E70097CB98 /* Demo Momenta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C590A29B26FC28B50097CB98 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C590A2A426FC28B50097CB98 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				25A669A6997243B6974B2745 /* [CP] Check Pods Manifest.lock */,
+				C590A29826FC28B50097CB98 /* Sources */,
+				C590A29926FC28B50097CB98 /* Frameworks */,
+				C590A29A26FC28B50097CB98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = C590A29C26FC28B50097CB98 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C590A27726FC27E70097CB98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C590A27E26FC27E70097CB98 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C590A29B26FC28B50097CB98 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = C590A27A26FC27E70097CB98 /* Build configuration list for PBXProject "Demo Momenta" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C590A27626FC27E70097CB98;
+			packageReferences = (
+				C566F13D26FD872200AE8DC1 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
+				C52FEDBA2702CD89001DE983 /* XCRemoteSwiftPackageReference "analytics-swift" */,
+				C51215A3270E7685006AE78F /* XCRemoteSwiftPackageReference "Amplitude-iOS" */,
+			);
+			productRefGroup = C590A28026FC27E70097CB98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C590A27E26FC27E70097CB98 /* Demo Momenta */,
+				C590A29B26FC28B50097CB98 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C590A27D26FC27E70097CB98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C590A28F26FC27E90097CB98 /* LaunchScreen.storyboard in Resources */,
+				C590A29726FC28340097CB98 /* GoogleService-Info.plist in Resources */,
+				C590A28C26FC27E90097CB98 /* Assets.xcassets in Resources */,
+				C590A28A26FC27E70097CB98 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C590A29A26FC28B50097CB98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D64A17F3F97B68ADEEDCCE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo Momenta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25A669A6997243B6974B2745 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D468346417E7C7E3E0916E91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo Momenta/Pods-Demo Momenta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo Momenta/Pods-Demo Momenta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo Momenta/Pods-Demo Momenta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C590A27B26FC27E70097CB98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C590A2AB26FC35B20097CB98 /* Cloud.swift in Sources */,
+				C590A28726FC27E70097CB98 /* ViewController.swift in Sources */,
+				C590A28326FC27E70097CB98 /* AppDelegate.swift in Sources */,
+				C590A28526FC27E70097CB98 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C590A29826FC28B50097CB98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C590A29F26FC28B50097CB98 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C590A2A226FC28B50097CB98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C590A29B26FC28B50097CB98 /* OneSignalNotificationServiceExtension */;
+			targetProxy = C590A2A126FC28B50097CB98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C590A28826FC27E70097CB98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C590A28926FC27E70097CB98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C590A28D26FC27E90097CB98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C590A28E26FC27E90097CB98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C590A29126FC27E90097CB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C590A29226FC27E90097CB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C590A29426FC27E90097CB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A155830FFB3274AD2F2CF1 /* Pods-Demo Momenta.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Demo Momenta/Demo Momenta.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99SW8E36CT;
+				INFOPLIST_FILE = "Demo Momenta/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onesignal.momenta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C590A29526FC27E90097CB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E5E4C9854ADCB14506A64AE /* Pods-Demo Momenta.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Demo Momenta/Demo Momenta.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99SW8E36CT;
+				INFOPLIST_FILE = "Demo Momenta/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onesignal.momenta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C590A2A526FC28B50097CB98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A29F4FBE105709B30270E4A /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99SW8E36CT;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onesignal.momenta.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C590A2A626FC28B50097CB98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8EE024015FD52798854EF5D /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99SW8E36CT;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onesignal.momenta.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C590A27A26FC27E70097CB98 /* Build configuration list for PBXProject "Demo Momenta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C590A29126FC27E90097CB98 /* Debug */,
+				C590A29226FC27E90097CB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C590A29326FC27E90097CB98 /* Build configuration list for PBXNativeTarget "Demo Momenta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C590A29426FC27E90097CB98 /* Debug */,
+				C590A29526FC27E90097CB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C590A2A426FC28B50097CB98 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C590A2A526FC28B50097CB98 /* Debug */,
+				C590A2A626FC28B50097CB98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C51215A3270E7685006AE78F /* XCRemoteSwiftPackageReference "Amplitude-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amplitude/Amplitude-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		C52FEDBA2702CD89001DE983 /* XCRemoteSwiftPackageReference "analytics-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:segmentio/analytics-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		C566F13D26FD872200AE8DC1 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C51215A4270E7685006AE78F /* Amplitude */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C51215A3270E7685006AE78F /* XCRemoteSwiftPackageReference "Amplitude-iOS" */;
+			productName = Amplitude;
+		};
+		C52FEDBB2702CD89001DE983 /* Segment */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C52FEDBA2702CD89001DE983 /* XCRemoteSwiftPackageReference "analytics-swift" */;
+			productName = Segment;
+		};
+		C566F13E26FD872200AE8DC1 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C566F13D26FD872200AE8DC1 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C590A27726FC27E70097CB98 /* Project object */;
+}
